@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_row_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_row_name"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/iv_row_image"
+            android:text="Name Item"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/iv_row_image"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:background="@android:drawable/arrow_down_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
