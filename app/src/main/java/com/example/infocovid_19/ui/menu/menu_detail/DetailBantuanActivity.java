@@ -1,18 +1,19 @@
 package com.example.infocovid_19.ui.menu.menu_detail;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.annotation.SuppressLint;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import com.example.infocovid_19.R;
 
-public class DetailInfoActivity extends AppCompatActivity {
+public class DetailBantuanActivity extends AppCompatActivity {
 
     private WebView webView;
     private SwipeRefreshLayout swipe;
@@ -20,7 +21,7 @@ public class DetailInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_info);
+        setContentView(R.layout.activity_detail_bantuan);
 
         setView();
         initView();
@@ -38,33 +39,22 @@ public class DetailInfoActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 if (i == 0) {
-                    setToolbar("Mengenal");
+                    setToolbar("Konsultasi Dokter");
                     setLinkWeb("https://www.covid19.go.id/tanya-jawab/");
                 } else if (i == 1) {
-                    setToolbar("Mencegah");
-                    setLinkWeb("https://www.covid19.go.id/portfolio-items/tingkatkan-kekebalan-tubuh-kurangi-risiko-covid-19/");
-                } else if (i == 2) {
-                    setToolbar("Mengobati");
-                    setLinkWeb("https://www.covid19.go.id/?s=mengobati");
-                } else if (i == 3) {
-                    setToolbar("Mengantisipasi");
-                    setLinkWeb("https://www.covid19.go.id/portfolio-items/tips-pencegahan-corona-virus-untuk-masyarakat/");
+                    setToolbar("Rumah Sakit Rujukan");
+                    setLinkWeb("https://www.covid19.go.id/2020/03/23/daftar-rumah-sakit-rujukan-covid-19/");
                 }
             }
         });
 
         if (i == 0) {
-            setToolbar("Mengenal");
+            setToolbar("Konsultasi Dokter");
             setLinkWeb("https://www.covid19.go.id/tanya-jawab/");
         } else if (i == 1) {
-            setToolbar("Mencegah");
-            setLinkWeb("https://www.covid19.go.id/portfolio-items/tingkatkan-kekebalan-tubuh-kurangi-risiko-covid-19/");
-        } else if (i == 2) {
-            setToolbar("Mengobati");
-            setLinkWeb("https://www.covid19.go.id/?s=mengobati");
-        } else if (i == 3) {
-            setToolbar("Mengantisipasi");
-            setLinkWeb("https://www.covid19.go.id/portfolio-items/tips-pencegahan-corona-virus-untuk-masyarakat/");
+            this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+            setToolbar("Rumah Sakit Rujukan");
+            setLinkWeb("https://www.covid19.go.id/2020/03/23/daftar-rumah-sakit-rujukan-covid-19/");
         }
     }
 

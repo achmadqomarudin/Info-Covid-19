@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
@@ -71,9 +72,62 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <include layout="@layout/row_item_informasi"/>
-            <include layout="@layout/row_item_informasi"/>
-            <include layout="@layout/row_item_informasi"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_row_image"
+                        android:background="@drawable/bg_search"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_row_name"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/iv_row_image"
+                        android:text="Hotline"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:layout_toRightOf="@+id/iv_row_image"
+                        tools:ignore="RtlSymmetry" />
+
+                    <Button
+                        android:id="@+id/btn_panggil"
+                        android:text="PANGGIL"
+                        android:background="@drawable/bg_green"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="10dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_bantuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/row_item_informasi"/>
 
         </LinearLayout>
     </RelativeLayout>

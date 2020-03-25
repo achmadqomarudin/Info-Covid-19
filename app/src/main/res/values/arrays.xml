@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="register_as">
-        <item>DKI Jakarta</item>
-        <item>Tulungagung</item>
-        <item>Yogyakarta</item>
+        <item>Indonesia</item>
     </string-array>
 </resources>
