@@ -14,24 +14,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/iv_row_image"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+        <RelativeLayout
+            android:id="@+id/row_image"
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
-            tools:ignore="ContentDescription" />
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_bg_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_row_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/tv_row_name"
             android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@+id/iv_row_image"
+            android:layout_toEndOf="@+id/row_image"
             android:text="Name Item"
             android:textColor="@android:color/black"
             android:textSize="18sp"
-            android:layout_toRightOf="@+id/iv_row_image"
+            android:layout_toRightOf="@+id/row_image"
             tools:ignore="RtlSymmetry" />
 
         <ImageView

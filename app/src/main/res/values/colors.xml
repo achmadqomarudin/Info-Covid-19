@@ -11,4 +11,16 @@
     <color name="colorOrange">#ffff8800</color>
     <color name="colorRed">#ffff4444</color>
     <color name="colorSoftBlack">#2C2C2C</color>
+
+    <!-- Background Color Icon -->
+    <!-- Menu Informasi-->
+    <color name="bgColorMengenal">#fff4f6</color>
+    <color name="bgColorMencegah">#fff3ee</color>
+    <color name="bgColorMengobati">#f0f9f2</color>
+    <color name="bgColorMengantisipasi">#e5faf9</color>
+
+    <!-- Menu Bantuan-->
+    <color name="bgColorHotline">#f0f9f2</color>
+    <color name="bgColorKonsultasiDokter">#edfafc</color>
+    <color name="bgColorRumahSakitRujukan">#fef1f3</color>
 </resources>

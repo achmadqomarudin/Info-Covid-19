@@ -72,16 +72,16 @@ public class InformasiFragment extends Fragment {
     }
 
     private void createListData() {
-        PojoInformasi pojoInformasi = new PojoInformasi(R.drawable.bg_search, "Mengenal");
+        PojoInformasi pojoInformasi = new PojoInformasi(R.drawable.ic_mengenal, R.color.bgColorMengenal, "Mengenal");
         list.add(pojoInformasi);
 
-        pojoInformasi = new PojoInformasi(R.drawable.bg_search, "Mencegah");
+        pojoInformasi = new PojoInformasi(R.drawable.ic_mencegah, R.color.bgColorMencegah, "Mencegah");
         list.add(pojoInformasi);
 
-        pojoInformasi = new PojoInformasi(R.drawable.bg_search, "Mengobati");
+        pojoInformasi = new PojoInformasi(R.drawable.ic_mengobati, R.color.bgColorMengobati, "Mengobati");
         list.add(pojoInformasi);
 
-        pojoInformasi = new PojoInformasi(R.drawable.bg_search, "Mengantisipasi");
+        pojoInformasi = new PojoInformasi(R.drawable.ic_mengantisipasi, R.color.bgColorMengantisipasi, "Mengantisipasi");
         list.add(pojoInformasi);
 
         adapter.notifyDataSetChanged();

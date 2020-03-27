@@ -17,6 +17,8 @@ import com.example.infocovid_19.ui.menu.menu_informasi.model.PojoInformasi;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AdapterInformasi extends RecyclerView.Adapter<AdapterInformasi.ViewHolder> {
 
     private List<PojoInformasi> list;
@@ -53,6 +55,7 @@ public class AdapterInformasi extends RecyclerView.Adapter<AdapterInformasi.View
         Context context      = holder.itemView.getContext();
 
         holder.title.setText(result.getTitle());
+        holder.bgImage.setImageResource(result.getColorBg());
 
         Glide.with(context)
                 .load(result.getImage())
@@ -67,6 +70,7 @@ public class AdapterInformasi extends RecyclerView.Adapter<AdapterInformasi.View
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView image;
+        private CircleImageView bgImage;
         private TextView title;
         private CardView container;
 
@@ -74,6 +78,7 @@ public class AdapterInformasi extends RecyclerView.Adapter<AdapterInformasi.View
             super(itemView);
 
             image     = itemView.findViewById(R.id.iv_row_image);
+            bgImage   = itemView.findViewById(R.id.iv_bg_image);
             title     = itemView.findViewById(R.id.tv_row_name);
             container = itemView.findViewById(R.id.container);
 

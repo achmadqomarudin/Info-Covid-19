@@ -75,10 +75,10 @@ public class BantuanFragment extends Fragment {
     }
 
     private void createListData() {
-        PojoInformasi pojoInformasi = new PojoInformasi(R.drawable.bg_search, "Konsultasi Dokter");
+        PojoInformasi pojoInformasi = new PojoInformasi(R.drawable.ic_konsultasi_dokter, R.color.bgColorKonsultasiDokter, "Konsultasi Dokter");
         list.add(pojoInformasi);
 
-        pojoInformasi = new PojoInformasi(R.drawable.bg_search, "Rumah Sakit Rujukan");
+        pojoInformasi = new PojoInformasi(R.drawable.ic_rumah_sakit, R.color.bgColorRumahSakitRujukan, "Rumah Sakit Rujukan");
         list.add(pojoInformasi);
 
         adapter.notifyDataSetChanged();

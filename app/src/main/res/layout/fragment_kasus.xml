@@ -20,9 +20,10 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:background="@color/colorGreen"
+                app:srcCompat="@drawable/ic_header_kasus"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"/>
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"/>
 
             <TextView
                 android:text="Lawan \nCovid-19"

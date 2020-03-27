@@ -18,6 +18,8 @@ import com.example.infocovid_19.ui.menu.menu_informasi.model.PojoInformasi;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AdapterBantuan extends RecyclerView.Adapter<AdapterBantuan.ViewHolder> {
 
     private List<PojoInformasi> list;
@@ -54,6 +56,7 @@ public class AdapterBantuan extends RecyclerView.Adapter<AdapterBantuan.ViewHold
         Context context      = holder.itemView.getContext();
 
         holder.title.setText(result.getTitle());
+        holder.bgImage.setImageResource(result.getColorBg());
 
         Glide.with(context)
                 .load(result.getImage())
@@ -68,6 +71,7 @@ public class AdapterBantuan extends RecyclerView.Adapter<AdapterBantuan.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView image;
+        private CircleImageView bgImage;
         private TextView title;
         private CardView container;
 
@@ -75,6 +79,7 @@ public class AdapterBantuan extends RecyclerView.Adapter<AdapterBantuan.ViewHold
             super(itemView);
 
             image     = itemView.findViewById(R.id.iv_row_image);
+            bgImage   = itemView.findViewById(R.id.iv_bg_image);
             title     = itemView.findViewById(R.id.tv_row_name);
             container = itemView.findViewById(R.id.container);
 
