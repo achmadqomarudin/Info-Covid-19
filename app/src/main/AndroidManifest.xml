@@ -21,8 +21,8 @@
         <activity android:name=".ui.menu.menu_detail.DetailInfoActivity" />
         <activity android:name=".ui.menu.menu_detail.DetailBantuanActivity" />
     </application>
+
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 </manifest>
