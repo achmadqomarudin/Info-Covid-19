@@ -11,6 +11,8 @@
     <color name="colorOrange">#ffff8800</color>
     <color name="colorRed">#ffff4444</color>
     <color name="colorSoftBlack">#2C2C2C</color>
+    <color name="colorTransparentBlack">#7F000000</color>
+    <color name="colorTransparenSoftBlack">#80000000</color>
 
     <!-- Background Color Icon -->
     <!-- Menu Informasi-->

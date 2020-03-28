@@ -2,6 +2,8 @@ package com.example.infocovid_19.ui.menu.menu_kasus;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -15,6 +17,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +45,7 @@ public class KasusFragment extends Fragment {
     private Context mContext;
     private BaseApiService baseApiService;
     private TextView tvKasusPositif, tvSehat, tvMeninggal;
+    private Button btnBerita, btnInfoPenting;
     private SwipeRefreshLayout swipe;
 
     public KasusFragment() {
@@ -71,6 +75,8 @@ public class KasusFragment extends Fragment {
         tvKasusPositif  = view.findViewById(R.id.tv_kasus_positif);
         tvSehat         = view.findViewById(R.id.tv_sehat);
         tvMeninggal     = view.findViewById(R.id.tv_meninggal);
+        btnBerita       = view.findViewById(R.id.btn_berita);
+        btnInfoPenting  = view.findViewById(R.id.btn_info_penting);
         swipe           = view.findViewById(R.id.swipe);
     }
 
@@ -137,6 +143,22 @@ public class KasusFragment extends Fragment {
             @Override
             public void onRefresh() {
                 fetchData();
+            }
+        });
+
+        btnBerita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.covid19.go.id/situasi-virus-corona/"));
+                startActivity(browserIntent);
+            }
+        });
+
+        btnInfoPenting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.covid19.go.id/info-penting/"));
+                startActivity(browserIntent);
             }
         });
     }

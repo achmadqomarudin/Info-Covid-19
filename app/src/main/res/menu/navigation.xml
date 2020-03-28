@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/nav_menu_kasus"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_kasus"
         android:title="Kasus" />
 
     <item
         android:id="@+id/nav_menu_informasi"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_informasi"
         android:title="Informasi" />
 
     <item
         android:id="@+id/nav_menu_bantuan"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_bantuan"
         android:title="Bantuan" />
 
 </menu>
