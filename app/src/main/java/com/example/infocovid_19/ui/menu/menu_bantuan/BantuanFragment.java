@@ -20,6 +20,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.infocovid_19.R;
@@ -39,6 +40,7 @@ public class BantuanFragment extends Fragment {
     private RecyclerView recyclerView;
     private AdapterBantuan adapter;
     private Button btnPanggil;
+    private TextView tvSepertiIni;
     private List<PojoInformasi> list;
     private Context mContext;
 
@@ -77,6 +79,15 @@ public class BantuanFragment extends Fragment {
                 Intent i = new Intent(mContext, DetailBantuanActivity.class);
                 i.putExtra("position", position);
                 startActivity(i);
+            }
+        });
+
+        tvSepertiIni = view.findViewById(R.id.tv_seperti_ini);
+        tvSepertiIni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.covid19.go.id/faqs/apa-saja-tanda-atau-gejala-infeksi-virus-corona/"));
+                startActivity(browserIntent);
             }
         });
 

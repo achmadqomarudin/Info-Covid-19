@@ -40,7 +40,7 @@ public class DetailBantuanActivity extends AppCompatActivity {
             public void onRefresh() {
                 if (i == 0) {
                     setToolbar("Konsultasi Dokter");
-                    setLinkWeb("https://www.covid19.go.id/tanya-jawab/");
+                    setLinkWeb("https://www.sehatq.com/cari?q=corona");
                 } else if (i == 1) {
                     setToolbar("Rumah Sakit Rujukan");
                     setLinkWeb("https://www.covid19.go.id/2020/03/23/daftar-rumah-sakit-rujukan-covid-19/");
@@ -50,7 +50,7 @@ public class DetailBantuanActivity extends AppCompatActivity {
 
         if (i == 0) {
             setToolbar("Konsultasi Dokter");
-            setLinkWeb("https://www.covid19.go.id/tanya-jawab/");
+            setLinkWeb("https://www.sehatq.com/cari?q=corona");
         } else if (i == 1) {
             this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
             setToolbar("Rumah Sakit Rujukan");

@@ -32,6 +32,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -44,7 +46,7 @@ public class KasusFragment extends Fragment {
     private static final String TAG = KasusFragment.class.getSimpleName();
     private Context mContext;
     private BaseApiService baseApiService;
-    private TextView tvKasusPositif, tvSehat, tvMeninggal;
+    private TextView tvKasusPositif, tvSehat, tvMeninggal, tvLihatDetail, tvLastUpdate;
     private Button btnBerita, btnInfoPenting;
     private SwipeRefreshLayout swipe;
 
@@ -75,6 +77,8 @@ public class KasusFragment extends Fragment {
         tvKasusPositif  = view.findViewById(R.id.tv_kasus_positif);
         tvSehat         = view.findViewById(R.id.tv_sehat);
         tvMeninggal     = view.findViewById(R.id.tv_meninggal);
+        tvLihatDetail   = view.findViewById(R.id.tv_lihat_detail);
+        tvLastUpdate    = view.findViewById(R.id.tv_last_update);
         btnBerita       = view.findViewById(R.id.btn_berita);
         btnInfoPenting  = view.findViewById(R.id.btn_info_penting);
         swipe           = view.findViewById(R.id.swipe);
@@ -100,6 +104,19 @@ public class KasusFragment extends Fragment {
                                 String kasus_positif = jsonObject.getString("cases");
                                 String sehat         = jsonObject.getString("recovered");
                                 String meninggal     = jsonObject.getString("deaths");
+                                String date          = jsonObject.getString("last_update");
+
+                                String final_date   = date.substring(0, date.length() - 17);
+
+                                SimpleDateFormat firstDateFormat    = new SimpleDateFormat("yyyy-MM-dd");
+                                SimpleDateFormat secondDateFormat   = new SimpleDateFormat("dd MMMM");
+
+                                try {
+                                    String currentDate = secondDateFormat.format(firstDateFormat.parse(final_date));
+                                    tvLastUpdate.setText("Terakhir diupdate "+ currentDate);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
 
                                 tvKasusPositif.setText(kasus_positif);
                                 tvSehat.setText(sehat);
@@ -143,6 +160,14 @@ public class KasusFragment extends Fragment {
             @Override
             public void onRefresh() {
                 fetchData();
+            }
+        });
+
+        tvLihatDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.covid19.go.id/"));
+                startActivity(browserIntent);
             }
         });
 

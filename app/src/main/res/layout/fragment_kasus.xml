@@ -97,11 +97,13 @@
                     android:layout_marginBottom="15dp">
 
                     <TextView
-                        android:text="Terakhir diupdate 21 Maret"
+                        android:id="@+id/tv_last_update"
+                        android:text="Loading..."
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <TextView
+                        android:id="@+id/tv_lihat_detail"
                         android:text="Lihat Detail"
                         android:drawableEnd="@drawable/ic_right"
                         android:layout_alignParentRight="true"
@@ -138,14 +140,30 @@
                             android:layout_margin="10dp"
                             android:orientation="vertical">
 
-                            <ImageView
-                                android:background="@drawable/bg_search"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"/>
+                            <RelativeLayout
+                                android:layout_width="40dp"
+                                android:layout_height="40dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:src="@color/bgColorKasusPositif"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="ContentDescription" />
+
+                                <ImageView
+                                    android:background="@drawable/ic_kasus_positif"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="10dp"
+                                    tools:ignore="ContentDescription" />
+
+                            </RelativeLayout>
 
                             <TextView
                                 android:id="@+id/tv_kasus_positif"
                                 android:text="0"
+                                android:layout_marginTop="5dp"
                                 android:fontFamily="@font/poppinsbold"
                                 android:textColor="@color/colorOrange"
                                 android:textSize="24sp"
@@ -168,14 +186,30 @@
                             android:layout_margin="10dp"
                             android:orientation="vertical">
 
-                            <ImageView
-                                android:background="@drawable/bg_search"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"/>
+                            <RelativeLayout
+                                android:layout_width="40dp"
+                                android:layout_height="40dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:src="@color/bgColorSembuh"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="ContentDescription" />
+
+                                <ImageView
+                                    android:background="@drawable/ic_sembuh"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="10dp"
+                                    tools:ignore="ContentDescription" />
+
+                            </RelativeLayout>
 
                             <TextView
                                 android:id="@+id/tv_sehat"
                                 android:text="0"
+                                android:layout_marginTop="5dp"
                                 android:fontFamily="@font/poppinsbold"
                                 android:textColor="@color/colorLightGreen"
                                 android:textSize="24sp"
@@ -199,14 +233,30 @@
                             android:orientation="vertical"
                             android:layout_alignParentEnd="true">
 
-                            <ImageView
-                                android:background="@drawable/bg_search"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"/>
+                            <RelativeLayout
+                                android:layout_width="40dp"
+                                android:layout_height="40dp">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:src="@color/bgColorMeninggal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="ContentDescription" />
+
+                                <ImageView
+                                    android:background="@drawable/ic_meninggal"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="10dp"
+                                    tools:ignore="ContentDescription" />
+
+                            </RelativeLayout>
 
                             <TextView
                                 android:id="@+id/tv_meninggal"
                                 android:text="0"
+                                android:layout_marginTop="5dp"
                                 android:fontFamily="@font/poppinsbold"
                                 android:textColor="@color/colorRed"
                                 android:textSize="24sp"

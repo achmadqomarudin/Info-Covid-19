@@ -15,6 +15,11 @@
     <color name="colorTransparenSoftBlack">#80000000</color>
 
     <!-- Background Color Icon -->
+    <!-- Menu Kasus -->
+    <color name="bgColorKasusPositif">#fff5f0</color>
+    <color name="bgColorSembuh">#eef6ee</color>
+    <color name="bgColorMeninggal">#fbf0f1</color>
+
     <!-- Menu Informasi-->
     <color name="bgColorMengenal">#fff4f6</color>
     <color name="bgColorMencegah">#fff3ee</color>
