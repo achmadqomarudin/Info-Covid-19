@@ -10,18 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bec787fb-6bce-48f6-a48e-dfc8a518fb68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/infocovid_19/ui/menu/menu_bantuan/BantuanFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/infocovid_19/ui/menu/menu_bantuan/BantuanFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/infocovid_19/ui/menu/menu_detail/DetailBantuanActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/infocovid_19/ui/menu/menu_detail/DetailBantuanActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/infocovid_19/ui/menu/menu_kasus/KasusFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/infocovid_19/ui/menu/menu_kasus/KasusFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bantuan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bantuan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_kasus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_kasus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bec787fb-6bce-48f6-a48e-dfc8a518fb68" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -77,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_bantuan.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="112" column="37" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="112" selection-end-column="37" />
+              <caret line="112" column="37" selection-start-line="89" selection-start-column="20" selection-end-line="112" selection-end-column="37" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -536,7 +525,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_bantuan.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="112" column="37" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="112" selection-end-column="37" />
+          <caret line="112" column="37" selection-start-line="89" selection-start-column="20" selection-end-line="112" selection-end-column="37" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
@@ -547,7 +536,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
         </state>
       </provider>
     </entry>
